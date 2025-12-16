@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>📝 Daily Planner</h1>
+    {% if session.user_id %}
+        <a class="logout" href="/logout">Logout</a>
+    {% endif %}
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>
+
